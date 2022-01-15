@@ -8,28 +8,16 @@ public class Brick : MonoBehaviour
 {
     public UnityEvent<int> onDestroyed;
     
-    public int PointValue;
+    protected int PointValue;
+    protected Color brickColor;
+    protected MaterialPropertyBlock block;
 
-    void Start()
+    protected virtual void Start()
     {
         var renderer = GetComponentInChildren<Renderer>();
+        block = new MaterialPropertyBlock();
+        block.SetColor("_BaseColor", brickColor);
 
-        MaterialPropertyBlock block = new MaterialPropertyBlock();
-        switch (PointValue)
-        {
-            case 1 :
-                block.SetColor("_BaseColor", Color.green);
-                break;
-            case 2:
-                block.SetColor("_BaseColor", Color.yellow);
-                break;
-            case 5:
-                block.SetColor("_BaseColor", Color.blue);
-                break;
-            default:
-                block.SetColor("_BaseColor", Color.red);
-                break;
-        }
         renderer.SetPropertyBlock(block);
     }
 
