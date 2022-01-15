@@ -498,8 +498,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d110623a642692246a42fbc2d8d89884, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BrickPrefab: {fileID: 897975713663390409, guid: 63f25b9733d2bcd4fa2ff6de1264c739, type: 3}
-  LineCount: 6
+  BrickPrefabs:
+  - {fileID: 2474773738933801636, guid: 4e33a913e0e31d0438d7c5ef71c03c93, type: 3}
+  - {fileID: 7948818659072299977, guid: 5b04c28c1b5f3044490b3924af63adf1, type: 3}
+  - {fileID: 1474630007992824355, guid: 0aec08770d0cf5c48a684ff362c0118e, type: 3}
+  - {fileID: 908952456281240436, guid: 29e88b7180d72984db2b9af1b3528e5b, type: 3}
+  - {fileID: 2382602532228255152, guid: 25002ed5a88f5fa42afd49f1f580846b, type: 3}
+  - {fileID: 3652381544324508483, guid: ae01543f1934ae8488b5494581a99568, type: 3}
   Ball: {fileID: 177912862}
   ScoreText: {fileID: 188020406}
   BestScoreText: {fileID: 2078529056}
